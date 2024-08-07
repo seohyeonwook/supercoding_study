@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- 14강 css flecbox 와 position -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            position: relative;
+        }
+        div{
+            width: 50px;
+            height: 50px;
+            background-color: tomato;
+            position: absolute;
+            /* 살짝 조정할때는 absolute 사용하고 중간으로 보내고싶으면 flex 사용하면된다 */
+            top: 10px
+            /* main에서 10px이아니라 body에서 떨어지는거다 main기준으로 떨어트리고싶으면 
+            main에 position relative;줘야한다 */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div></div>
+    </main>
+</body>
+</html>
